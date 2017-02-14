@@ -1,0 +1,27 @@
+<!--
+  自己动手整理的 Checkstyle 的配置文件，参考了 Checkstyle 自带的 Sun 
+  以及 Google 的编码规范：
+  
+  Sun 公司的编码规范：
+    - the Java Language Specification at
+      http://java.sun.com/docs/books/jls/second_edition/html/index.html
+    - the Sun Code Conventions at 
+      http://java.sun.com/docs/codeconv/
+    - the Javadoc guidelines at
+      http://java.sun.com/j2se/javadoc/writingdoccomments/index.html
+    - the JDK Api documentation at
+      http://java.sun.com/j2se/docs/api/index.html
+    - some best practices
+  
+  Google 公司的编码规范：
+    - Google Java Style at 
+      https://google.github.io/styleguide/javaguide.html.
+      
+  Checkstyle 的代码检测规则支持自定义，你可以在http://checkstyle.sf.net 
+  （或者你自己下载的 Checkstyle 文件中）找到相关的指导手册
+  
+  Authors: Elijash Sun.
+-->
+<module name="Checker">
+
+</module>
