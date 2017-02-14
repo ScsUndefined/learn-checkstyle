@@ -23,5 +23,65 @@
   Authors: Elijash Sun.
 -->
 <module name="Checker">
-
+  <!--
+    description: base directory name; stripped off in messages about files
+    If you set the basedir property below, then all reported file names 
+    will be relative to the specified directory. See
+    http://checkstyle.sourceforge.net/5.x/config.html#Checker
+    type: string
+    default value: null
+  -->
+  <property name="basedir" value="src/"/>
+  
+  <!--
+    description: caches information about files that have checked OK; used
+    to avoid repeated checks of the same files
+    tyle: string
+    default value: null (no cache file)
+  -->
+  <property name="cacheFile" value="target/cachefile"/>
+  
+  <!--
+    description: locale country for messages
+    type: string (either the empty string or an uppercase ISO 3166 2-letter code)
+    default value: default locale country for the Java Virtual Machine
+  -->
+  <property name="localeCountry" value="ZH"/>
+  
+  <!-- 
+    description: locale language for messages
+    type: string (either the empty string or a lowercase ISO 639 code)
+    default value: default locale language for the Java Virtual Machine
+  -->
+  <property name="localeLanguage" value="cn"/>
+  
+  <!-- 
+    description: name of the file charset
+    type: String
+    default value: System property "file.encoding"
+  -->
+  <property name="charset" value="UTF-8"/>
+  
+  
+  <!-- 
+    description: file extensions that are accepted
+    type: String Set
+    default value: null
+  -->
+  <property name="fileExtensions" value="java, properties, xml"/>
+  
+  <!-- 
+    description: the default severity level of all violations
+    type: Severity (see http://checkstyle.sourceforge.net/property_types.html#severity)
+    default value: error
+  -->
+  <property name="severity" value="warning"/>
+  
+  <!-- 
+    description: whether to stop execution of Checkstyle if a 
+    single file produces any kind of exception during verification
+    type: Boolean
+    default value: true
+  -->
+  <property name="haltOnException" value="true"/>
 </module>
